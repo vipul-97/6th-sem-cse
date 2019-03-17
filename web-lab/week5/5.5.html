@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Week 5</title>
+</head>
+<body>
+  <h2>Prototype</h2>
+</body>
+
+<script type="text/javascript">
+
+Array.prototype.toPalindrome = function()
+{
+  if(this.length % 2 == 1)
+    return this.concat(this.slice(0,this.length-1).reverse());
+  else
+    return this.concat(this.slice(0,this.length).reverse());
+
+
+}
+
+</script>
+
+</html>
