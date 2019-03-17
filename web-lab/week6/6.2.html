@@ -8,7 +8,7 @@
 </body>
 
 <script type="text/javascript">
-var arr = [];
+	var arr = [];
 	class Animal{
 		constructor(name,sound,speed){
 			this.name=name;
@@ -22,8 +22,8 @@ var arr = [];
 		run(time){
 			var that = this;
 			return new Promise(function(resolve, reject) {
-  setTimeout(() =>{ console.log(that.speed*time,that.name); arr.push(that.speed*time); }, (time)*1000);
-});
+				setTimeout(() =>{ console.log(that.speed*time,that.name); arr.push(that.speed*time); }, (time)*1000);
+			});
 		}
 	}
 	var monkey= new Animal("monkey",6,2)
