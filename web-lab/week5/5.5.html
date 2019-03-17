@@ -11,10 +11,8 @@
 
 Array.prototype.toPalindrome = function()
 {
-  if(this.length % 2 == 1)
+
     return this.concat(this.slice(0,this.length-1).reverse());
-  else
-    return this.concat(this.slice(0,this.length).reverse());
 }
 
 </script>
