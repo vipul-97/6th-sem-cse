@@ -22,7 +22,7 @@ var arr = [];
 		run(time){
 			var that = this;
 			return new Promise(function(resolve, reject) {
-  setTimeout(() =>{ console.log(that.speed*time,that.name); arr.push(that.speed*time); }, (time/5)*1000);
+  setTimeout(() =>{ console.log(that.speed*time,that.name); arr.push(that.speed*time); }, (time)*1000);
 });
 		}
 	}
@@ -38,7 +38,7 @@ var arr = [];
 		console.log(obj[i].run(5))
 	}
 
-	setTimeout (()=>console.log('Fastest animal is ',obj[arr.indexOf(Math.max(...arr))].name,'with speed ',Math.max(...arr)),2000);
+	setTimeout (()=>console.log(obj[arr.indexOf(Math.max(...arr))].name,'went farthest with distance ',Math.max(...arr)),6000);
 </script>
 
 </html>
