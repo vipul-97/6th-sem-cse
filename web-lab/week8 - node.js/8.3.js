@@ -13,8 +13,6 @@ function tri_area(a,b) {
 	ar = 0.5*a*b;
 	console.log('\nTriangle area is :'+ar);
 }
-module.exports.circ_area = circ_area;
-module.exports.rect_area = rect_area;
-module.exports.tri_area = tri_area;
+module.exports = { circ_area,rect_area,tri_area}
 
 
